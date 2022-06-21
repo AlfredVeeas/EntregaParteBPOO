@@ -4,25 +4,24 @@
  */
 package app;
 
-import java.util.Scanner;
-
 /**
  *
  * @author evert
  */
 public class Cliente extends Persona {
     private int dinero;
-    private Vendedor vendedor;
 
     public Cliente(int dinero, String Nombre, String Rut, String Direccion) {
         super(Nombre, Rut, Direccion);
         this.dinero = dinero;
     }
 
+    @Override
     public int getDinero() {
         return dinero;
     }
 
+    @Override
     public void setDinero(int dinero) {
         this.dinero = dinero;
     }

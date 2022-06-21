@@ -117,11 +117,7 @@ public class InterfaceVendedor extends Frame implements WindowListener, ActionLi
          txtHoraDeAtencion=new TextField();
 	 txtHoraDeAtencion.setBounds(400,250,400,30);
 	 txtHoraDeAtencion.setFont(textFont);
-         
-         /*
-         for(int i=0;i<cliente.getRegion().length;i++)
-                chRegion.addItem(cliente.getRegion()[i]);
-         */
+
          btnAceptar=new Button("Crear");
          btnAceptar.setBounds(400,350,100,50);
 	 btnAceptar.setFont(textFont);
@@ -145,8 +141,6 @@ public class InterfaceVendedor extends Frame implements WindowListener, ActionLi
          add(txtRut);
          add(lblNombreLocal);
          add(txtNombreLocal);
-         //add (lblRegion); 
-         //add (chRegion);
          add(btnAceptar);
          add(btnLimpiar);
   
@@ -216,8 +210,7 @@ public class InterfaceVendedor extends Frame implements WindowListener, ActionLi
 
   
     public void actionPerformed(ActionEvent e) {
-         Date fechaNacimiento;
-         String Region;
+         
          
          //button 
          Object obj = e.getSource();
