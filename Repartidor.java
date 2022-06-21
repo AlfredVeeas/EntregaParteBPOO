@@ -4,8 +4,6 @@
  */
 package app;
 
-import java.util.Scanner;
-
 /**
  *
  * @author evert
@@ -13,8 +11,7 @@ import java.util.Scanner;
 public class Repartidor extends Persona{
     private String MatriculaVehiculo;
     private int dinero;
-    
-    private Vendedor vendedor;
+
     
     public Repartidor(String MatriculaVehiculo, String Nombre, String Rut, String Direccion) {
         super(Nombre, Rut, Direccion);
